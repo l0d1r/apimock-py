@@ -1,0 +1,66 @@
+{
+  "name": "post_uaa_static_resource_parameters",
+  "path": "/api/v1/management/static_resource_parameters",
+  "requests": {
+    "post": {
+      "request": {
+        "body": {
+          "placeholder": "...",
+          "value": "...",
+          "mode": "equal",
+          "user_uuid": "...",
+          "version": "..."
+        }
+      },
+      "response": {
+        "status": 201,
+        "body": {
+          "status": 201,
+          "message": "success",
+          "data": {
+            "uuid": "$gen:uuid"
+          }
+        }
+      }
+    },
+    "get": {
+      "request": {
+        "parameters": {
+          "offset": "...",
+          "limit": "...",
+          "filter": [
+            {
+              "field": "...",
+              "type": "...",
+              "value": "..."
+            }
+          ]
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "status": 200,
+          "message": "success",
+          "data": {
+            "list": [
+              {
+                "uuid": "$gen:uuid",
+                "version": "-1",
+                "user_uuid": "$gen:uuid",
+                "placeholder": "system_admin",
+                "value": "",
+                "mode": "equal"
+              }
+            ],
+            "pagination":{
+              "limit": 100,
+	          "offset": 0,
+              "total": 100
+            }
+          }
+        }
+      }
+    }
+  }
+}

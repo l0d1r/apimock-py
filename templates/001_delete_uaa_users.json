@@ -1,0 +1,45 @@
+{
+  "name": "uaa_delete_users",
+  "path": "/api/v1/management/administration_levels/{admin_level_uuid}/users/{user_uuid}",
+  "requests": {
+    "delete": {
+      "request": {},
+      "response": {
+        "status": 200,
+        "body": {
+          "status": 200,
+          "message": "success",
+          "data": {
+            "uuid": "$req:url.user_uuid"
+          }
+        }
+      }
+    },
+    "get": {
+      "request": {},
+      "response": {
+        "status": 200,
+        "body": {
+          "data": {
+            "auth_type": "INTERNAL",
+            "created": "string",
+            "description": "AAAAAA",
+            "last_password_reset": "string",
+            "login": "AAAAAA",
+            "read_only": false,
+            "role_name": "string",
+            "role_uuid": "string",
+            "security_profile_name": "string",
+            "security_profile_uuid": "string",
+            "status": "active",
+            "unsuccessful_login_attempts": 0,
+            "uuid": "$req:url.user_uuid",
+            "version": "string"
+          },
+          "message": "string",
+          "status": 200
+        }
+      }
+    }
+  }
+}

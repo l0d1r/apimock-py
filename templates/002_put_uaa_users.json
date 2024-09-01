@@ -1,0 +1,32 @@
+{
+  "name": "uaa_put_users",
+  "path":  "/api/v1/management/administration_levels/{admin_level_uuid}/users",
+  "requests": {
+     "put": {
+      "request": {
+        "body": {
+          "auth_type": "INTERNAL",
+          "uuid": "...",
+          "login": "...",
+          "password": "...",
+          "description": "...",
+          "security_profile_uuid": "...",
+          "role_uuid": "...",
+          "read_only": "...",
+          "status": "...",
+          "version": "..."
+        }
+      },
+      "response": {
+        "status": 201,
+        "body": {
+          "status": 201,
+          "message": "success",
+          "data": {
+            "uuid": "$req:body.uuid"
+          }
+        }
+      }
+    }
+  }
+}

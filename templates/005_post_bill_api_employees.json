@@ -1,0 +1,22 @@
+{
+  "name": "post_uaa_static_resource_parameters",
+  "path": "/api/v1/employees",
+  "requests": {
+    "post": {
+      "request": {
+        "body": {
+          "msisdn": "..."
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "status": 202,
+          "message": "success",
+          "data": {
+          }
+        }
+      }
+    }
+  }
+}

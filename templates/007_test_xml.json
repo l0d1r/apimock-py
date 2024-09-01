@@ -1,0 +1,13 @@
+{
+  "name": "test_ss",
+  "path": "/test",
+  "requests": {
+    "get": {
+      "request": {},
+      "response": {
+        "status": 200,
+        "body": "$xml:./templates/test.xml"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "post_uaa_static_resource_parameters",
+  "path": "/api/v1/controlled_employees",
+  "requests": {
+    "get":{
+      "request": {
+        "parameters": {
+          "msisdn": "...",
+          "limit": "...",
+          "offset": "..."
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "status": 200,
+          "message": "success",
+          "data": {
+            "list": [
+              {
+                "msisdn": "$req:parameters.msisdn",
+                "status_id": "1",
+                "status_name": "ok",
+                "acc_num": "wew"
+              }
+            ],
+            "pagination": {
+              "limit": "$req:parameters.limit",
+              "offset": "$req:parameters.limit",
+              "total": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
